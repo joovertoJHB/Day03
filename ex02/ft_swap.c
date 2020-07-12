@@ -5,24 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jooverto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/11 07:35:17 by jooverto          #+#    #+#             */
-/*   Updated: 2020/07/11 07:48:36 by jooverto         ###   ########.fr       */
+/*   Created: 2020/07/12 10:12:02 by jooverto          #+#    #+#             */
+/*   Updated: 2020/07/12 10:22:29 by jooverto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c)
+void	ft_swap(int *a, int *b)
 {
-	write(1, &c, 1);
-}	
+	int		placeholder;
 
-void 	ft_swap(int *a, int *b)
-{
-	int		nbr1;
-	
-	*a = 30;
-	*b = 14;
-
-	nbr1 = *a;
+	placeholder = *a;
 	*a = *b;
-	*b = nbr1;	
+	*b = placeholder;
+
 }
