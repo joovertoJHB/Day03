@@ -6,19 +6,19 @@
 /*   By: jooverto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 10:24:36 by jooverto          #+#    #+#             */
-/*   Updated: 2020/07/12 10:43:59 by jooverto         ###   ########.fr       */
+/*   Updated: 2020/07/12 12:07:11 by jooverto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void 	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	int		ab;
-	int		modab;
 
 	ab = a / b;
-	modab = a % b;
-	
-	*div = ab;
-   	*mod = modab;	
+
+	ab = *div;
+	*mod = a % b;
 	
 }
